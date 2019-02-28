@@ -468,7 +468,7 @@ module.exports = ".outer-container{\r\n    display: flex;\r\n    flex-direction:
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"outer-container\">\r\n<div class=\"content\">\r\n\t<img src=\"assets/images/user_login_img.png\" class=\"login_user_icon\"/>\r\n<form class=\"form-inputs\" #f=\"ngForm\" (submit)=\"onSubmit(f.value)\">\r\n<h2> Admin Login </h2>\r\n\t<input type=\"email\" name=\"email\" ngModel email  placeholder=\"Enter email\" required/>\r\n\t<input type=\"password\" ngModel name=\"password\" placeholder=\"Enter Password\" required/>\r\n\t<input type=\"submit\" class=\"myButton\" value=\"Submit\" [disabled]=\"!f.valid\"/>\r\n</form>\r\n<h2 class=\"invalid\" *ngIf=\"userinvalid\">Username/Password Invalid</h2>\r\n</div>\r\n</div>"
+module.exports = "<div class=\"outer-container\">\r\n<div class=\"content\">\r\n\t<img [src]=\"'assets/images/user_login_img.png'\" class=\"login_user_icon\"/>\r\n<form class=\"form-inputs\" #f=\"ngForm\" (submit)=\"onSubmit(f.value)\">\r\n<h2> Admin Login </h2>\r\n\t<input type=\"email\" name=\"email\" ngModel email  placeholder=\"Enter email\" required/>\r\n\t<input type=\"password\" ngModel name=\"password\" placeholder=\"Enter Password\" required/>\r\n\t<input type=\"submit\" class=\"myButton\" value=\"Submit\" [disabled]=\"!f.valid\"/>\r\n</form>\r\n<h2 class=\"invalid\" *ngIf=\"userinvalid\">Username/Password Invalid</h2>\r\n</div>\r\n</div>"
 
 /***/ }),
 
